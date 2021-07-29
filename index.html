@@ -53,6 +53,16 @@
                 ></a-image> 
             </a-marker>
 
+            <a-entity camera></a-entity>
+        </a-scene>
+        <a-scene
+            vr-mode-ui="enabled: false;"
+            loading-screen="enabled: false;"
+            arjs="trackingMethod: best; sourceType: webcam; debugUIEnabled: false;"
+            id="scene"
+            embedded
+            gesture-detector
+        >
             <a-assets>
                 <video
                     id="vid"
@@ -91,8 +101,9 @@
                     gesture-handler
                 ></a-video>
             </a-marker>
-
+            
             <a-entity camera></a-entity>
         </a-scene>
+    
     </body>
 </html>
